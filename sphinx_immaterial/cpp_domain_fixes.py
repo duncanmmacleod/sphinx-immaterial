@@ -728,7 +728,7 @@ def _add_parameter_documentation_ids(
     obj_content: sphinx.addnodes.desc_content,
     sig_param_nodes_for_signature: List[Dict[str, sphinx.addnodes.desc_parameter]],
     symbols: SYMBOL_CLS_TYPE,
-    domain_module: Union[sphinx.domains.c, sphinx.domains.cpp],  # type: ignore
+    domain_module,  # type: ignore Union[sphinx.domains.c, sphinx.domains.cpp]
     starting_id_version: int,
 ) -> None:
 
